@@ -1,6 +1,7 @@
 #react-native配置
 
-##环境`windows` `android`
+##环境
+`windows` `android`
 
 ##1.java环境
 
