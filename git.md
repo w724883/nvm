@@ -15,14 +15,14 @@
 
 在.ssh文件夹里添加config文件，如我要配置github
 
-`
+```
 Host github.com
 User w724883
 HostName ssh.github.com
 PreferredAuthentications publickey
 IdentityFile ~/.ssh/github
 Port 443 
-`
+```
 
 因为github.com使用https协议所以需`HostName ssh.github.com` `Port 443 `
 
@@ -30,12 +30,12 @@ Port 443
 
 若git仓库不是https协议，则config配置如
 
-`
+```
 Host baidu.com
 HostName baidu.com
 PreferredAuthentications publickey
 IdentityFile ~/.ssh/icode
-`
+```
 
 ##3.公钥配置到git仓库
 将`你起的文件名.pub`中的key复制到git仓库配置中，详情百度
