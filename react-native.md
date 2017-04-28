@@ -1,19 +1,19 @@
-#react-native配置
+# react-native配置
 
-##环境
+## 环境
 `windows` `android`
 
-##1.java环境
+## 1.java环境
 
 下载java包并安装（自行百度）
 
-##2.java环境变量
+## 2.java环境变量
 
 在系统环境变量中新建 `JAVA_HOME`为`D:\Java\jdk1.8.0_121`(请替换成你的java安装地址)
 
 在系统环境变量中Path添加`%JAVA_HOME%\bin;%JAVA_HOME%\jre\bin;`
 
-##3.android环境
+## 3.android环境
 
 下载Android Studio并安装并且安装sdk（自行百度）
 
@@ -21,9 +21,10 @@
 
 在系统环境变量中Path添加`%ANDROID_HOME%\tools;%ANDROID_HOME%\platform-tools;`
 
-打开Android SDK Manager（就是一个叫SDK Manager.exe的）
+打开`Android SDK Manager`（就是一个叫SDK Manager.exe的）
 
 选中以下项目并安装
+```
 Tools -> Android SDK Tools
 Tools -> Android SDK Platform-tools
 Tools -> Android SDK Build-tools (version 23.0.1)
@@ -31,26 +32,26 @@ Android 6.0 (API 23) -> SDK Platform
 Android 6.0 (API 23) -> Intel x86 Atom_64 System Image
 Android 6.0 (API 23) -> Intel x86 Atom System Image
 Android Support Repository
+```
 
-
-##4.node环境
+## 4.node环境
 
 安装nodejs环境，在命令行中输入node -v检查是否安装完成（不会自行百度）
-##4.git环境
+## 5.git环境
 
 安装git环境，并在系统环境变量Path添加`d:\Git\cmd;`（请换成你的地址），在命令行中输入git --version检查是否安装完成（不会自行百度）
 
-##5.react-native环境
+## 6.react-native环境
 
 在命令行中输入`npm install -g react-native-cli`
 
-##6.初始化react-native项目
+## 7.初始化react-native项目
 
 在命令行制定目录下输入`react-native init myapp`（myapp是你的项目名）
 
 这个过程比较慢，趁这个机会安装android模拟器吧
 
-##7.安装模拟器
+## 8.安装模拟器
 
 
 Android Studio有自己的模拟器，但是很难折腾，所以装一个Genymotion吧（请自行安装），最好安装Genymotion with VirtualBox版本，因为模拟器需要虚拟机环境支持
@@ -64,7 +65,7 @@ ok这时候如果看到android的界面，万事大吉
 
 如果你用实体机，请忽略以上，将你的安卓机通过数据线连接到电脑就行
 
-##8.启动react-native
+## 9.启动react-native
 
 
 react-native init myapp完成之后，如果没报错则继续，有报错请check自己的环境
@@ -76,7 +77,7 @@ react-native init myapp完成之后，如果没报错则继续，有报错请che
 这些sdk包都很大，希望你的硬盘足够
 
 
-##9.调试
+## 10.调试
 
 如果没有报错，项目启动完成，这时候模拟器或者实体机会自动打开一个myapp的app
 
@@ -90,7 +91,7 @@ react-native init myapp完成之后，如果没报错则继续，有报错请che
 这个过程实体机报错，别哭，可能是实体机和电脑不在一个局域网的问题，请查看官方文档，在命令行执行`adb reverse tcp:8081 tcp:8081`，调出调试选项（听说摇一摇就可以），点击Reload JS
 
 
-##10.开发
+## 11.开发
 
 主入口文件在index.android.js，试着改里面的文字保存，在模拟器用double R按键刷新，在实体机中如何刷新请尝试吧
 
