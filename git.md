@@ -1,6 +1,7 @@
-#git 管理key
+# git 管理key
 环境：linux
-##1.生成公钥私钥
+
+## 1.生成公钥私钥
 
 `ssh-keygen -t rsa -C "你的邮箱" -f ~/.ssh/起个文件名`
 
@@ -8,7 +9,7 @@
 
 若要配置管理多个key，执行如上命令再起一个文件名
 
-##2.配置
+## 2.配置
 将新生成的ssh秘钥地址加入到ssh配置文件中`ssh-agent bash` `ssh-add ~/.ssh/你起的文件名`
 
 确认是否加入成功`ssh-add -l`
@@ -37,10 +38,10 @@ PreferredAuthentications publickey
 IdentityFile ~/.ssh/icode
 ```
 
-##3.公钥配置到git仓库
+## 3.公钥配置到git仓库
 将`你起的文件名.pub`中的key复制到git仓库配置中，详情百度
 
-##4.测试
+## 4.测试
 测试是否成功`ssh -T git@github.com`
 
 clone仓库`git clone 你的仓库地址`
